@@ -8,4 +8,8 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build: {
+        outDir: 'dist', // Ensures the build output is in 'dist' folder as Vercel expects
+        emptyOutDir: true,
+    },
 });
